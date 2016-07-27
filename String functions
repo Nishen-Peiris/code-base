@@ -1,0 +1,18 @@
+// traverse through a string char by char
+for(int i = 0, n = input.length() ; i < n ; i++) { 
+  char c = s.charAt(i); 
+}
+
+// count the no. of different chars in the string
+inputString.chars().distinct().count();
+
+// count distinct chars from a given string
+public static int countUniqueCharacters(String inputString) {
+    String buffer = "";
+    for (int i = 0; i < inputString.length(); i++) {
+        if (!buffer.contains(String.valueOf(inputString.charAt(i)))) {
+            buffer += inputString.charAt(i);
+        }
+    }
+    return buffer.length();
+}

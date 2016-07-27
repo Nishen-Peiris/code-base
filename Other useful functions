@@ -1,0 +1,8 @@
+// Initialize an array at once
+Arrays.fill(array, 0);
+
+// Get the max and min of an array
+Arrays.sort(array);
+
+// convert from one base to another
+Integer.toString(Integer.parseInt(number, base1), base2);
